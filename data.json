@@ -1,0 +1,10 @@
+{
+  "subject": "캡스톤 프로젝트 주제",
+  "rationale": "프로젝트의 실용적 근거",
+  "features": ["핵심 기능1", "핵심 기능2", "핵심 기능3"],
+  "environment": "Python 3.11, Flask, MySQL",
+  "team": [
+    {"name": "김하민", "role": "팀장"},
+    {"name": "최정환", "role": "팀원"}
+  ]
+}
