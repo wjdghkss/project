@@ -3,9 +3,17 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="./실용적 근거_files/style.css"><title>실용적 근거</title></head>
 <body>
   <h2>실용적 근거</h2>
-  <p><b>문제:</b> 캠퍼스 실내 길찾기 어려움</p>
+
+  <p><b>문제:</b> {{ data.problem }}</p>
+
   <p><b>근거:</b></p>
-  <ul><li>설문 결과 73%가 길찾기 불편</li><li>장애학생 이동 동선 고려 필요</li></ul>
-  <p><b>가치:</b> 시간 절약, 접근성 향상</p>
+  <ul>
+    {% for item in data.evidence %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+
+  <p><b>가치:</b> {{ data.value }}</p>
+
   <p><a href="/">← 홈</a></p>
 </body></html>
