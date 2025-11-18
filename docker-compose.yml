@@ -1,9 +1,9 @@
-version: "3.9"
-
 services:
   web:
     build: .
+    container_name: project-web
     ports:
-      - "5000:5000"
+      - "80:80"      # ★ 외부 80 -> 내부 80
     volumes:
       - .:/app
+    restart: always
