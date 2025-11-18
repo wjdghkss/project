@@ -11,7 +11,7 @@
   "features": ["동영상 모자이크처리", "원하는 사람 지정해서 그사람만 모자이크 해제", "빠른 업로드"],
   "environment": [
     "Front-End: HTML, CSS, Flask",
-    "Back-End: Flask, Yolo, OpenCV,",
+    "Back-End: Flask, Yolo, OpenCV,tensorFlow, mediapipe, ffmpeg pytorch",
     "Runtime: KT Cloud",
     "Deploy: KT Cloud"
   ],

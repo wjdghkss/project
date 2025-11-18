@@ -27,10 +27,11 @@
 기능 3: 빠른 업로드 및 처리 속도
 
 4. 구현 환경 (Environment)
-구분항목Front-End (프론트엔드)HTML, CSS, Flask (템플릿 엔진)Back-End (백엔드)Flask, Yolo, OpenCVRuntime (런타임)KT Cloud (또는 Local Docker 환경)Deploy (배포)KT Cloud (최종), Local Docker 환경 (개발/시연)5. 팀원 구성 및 역할 (Team)이름역할최정환프론트엔드 개발 (UI/UX 구현)김하민발표 자료 및 문서 제작 (PPT 제작)이소빈백엔드 개발 (API 설계 및 구현)6. 실행 방법 (Run)6.1. 로컬 환경 (Docker 사용)프로젝트 루트 디렉토리에서 다음 명령어를 실행하여 서비스를 빌드하고 실행합니다.Bashdocker compose up --build -d
+구분항목Front-End (프론트엔드)HTML, CSS, Flask (템플릿 엔진)Back-End (백엔드)Flask, Yolo, OpenCV tensorFlow mediapipe ffmpeg pytorch (런타임)KT Cloud (또는 Local Docker 환경)Deploy (배포)KT Cloud (최종), Flask 환경 (개발/시연)5. 팀원 구성 및 역할 (Team)이름,역할 최정환 프론트엔드 개발 (UI/UX 구현) 김하민발표 자료 및 문서 제작 (PPT 제작) 이소빈 백엔드 개발 (API 설계 및 구현)6. 실행 방법 6.1. 가상 환경 (데비안 서버 사용)프로젝트 루트 디렉토리에서 다음 명령어를 실행하여 서비스를 실행합니다 sudo systemctl start nginx, sudo systemctl mozik
 
 6. 실행 방법 (Run)
-6.1. 로컬 환경 (KT Cloud 사용)
-프로젝트 루트 디렉토리에서 다음 명령어를 실행하여 서비스를 빌드하고 실행합니다.
-docker compose up --build -d
-6.2. 접속서비스가 성공적으로 배포되면 웹 브라우저를 통해 접속합니다.http://localhost:5000 < 프로젝트에 맞는 포트 또는 배포된 public IP >주: 본 프로젝트의 기본 Flask 포트는 5000입니다. 다른 포트를 사용하거나 AWS EC2/ECS 등에 배포하는 경우 해당 IP와 포트로 접속해야 합니다.
+6.1. 가상 환경 (KT Cloud 사용)
+프로젝트 루트 디렉토리에서 다음 명령어를 실행하여 서비스를 실행합니다
+sudo systemctl start nginx, sudo systemctl mozik
+
+6.2. 접속서비스가 성공적으로 배포되면 웹 브라우저를 통해 접속합니다.http://211.253.27.46 < 프로젝트에 맞는 포트 또는 배포된  IP >
